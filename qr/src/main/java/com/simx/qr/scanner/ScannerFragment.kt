@@ -4,6 +4,7 @@ package com.simx.qr.scanner
 import android.Manifest
 import android.content.Context
 import android.content.pm.PackageManager
+import android.media.MediaPlayer
 import android.os.Bundle
 import android.util.Log
 
@@ -31,6 +32,9 @@ class ScannerFragment constructor(private val listener: OnScannerListener) : Fra
     private lateinit var vm:ScannerFragmentVM
     private lateinit var zXingScannerView: ZXingScannerView
     private val zinxListener = ZXingScannerView.ResultHandler {result -> run {
+        var sound = MediaPlayer.create(this@ScannerFragment.context!!, R.raw.snap)
+
+        sound.start()
         listener.onResult(result)
     }
     }
