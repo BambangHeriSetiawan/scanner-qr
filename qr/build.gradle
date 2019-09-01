@@ -40,7 +40,7 @@ dependencies {
     implementation 'com.google.android.material:material:1.0.0'
     implementation 'androidx.core:core-ktx:1.0.2'
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
-    api 'me.dm7.barcodescanner:zxing:1.9.13'
+    api 'com.google.zxing:core:3.3.3'
     implementation 'androidx.multidex:multidex:2.0.1'
     implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
 

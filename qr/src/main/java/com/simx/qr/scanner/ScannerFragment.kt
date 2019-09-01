@@ -18,9 +18,11 @@ import com.google.zxing.BarcodeFormat
 import com.simx.qr.R
 import com.simx.qr.common.CustomViewFinderView
 import com.simx.qr.databinding.ScannerFragmentBinding
-import me.dm7.barcodescanner.core.IViewFinder
+
 import com.google.zxing.Result
-import me.dm7.barcodescanner.zxing.ZXingScannerView
+import com.simx.qr.core.IViewFinder
+import com.simx.qr.core.ZXingScannerView
+
 
 class ScannerFragment constructor(private val listener: OnScannerListener) : Fragment() {
 

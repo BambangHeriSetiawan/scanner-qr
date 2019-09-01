@@ -3,7 +3,7 @@ package com.simx.qr.common
 import android.content.Context
 import android.graphics.Canvas
 import android.graphics.Paint
-import me.dm7.barcodescanner.core.ViewFinderView
+import com.simx.qr.core.ViewFinderView
 
 /**
  * Created by simx on 01,September,2019
