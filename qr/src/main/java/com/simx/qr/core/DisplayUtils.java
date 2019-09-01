@@ -11,7 +11,7 @@ public class DisplayUtils {
         WindowManager wm = (WindowManager) context.getSystemService(Context.WINDOW_SERVICE);
         Display display = wm.getDefaultDisplay();
         Point screenResolution = new Point();
-        if (android.os.Build.VERSION.SDK_INT >= 13) {
+        if (android.os.Build.VERSION.SDK_INT >= 21) {
             display.getSize(screenResolution);
         } else {
             screenResolution.set(display.getWidth(), display.getHeight());

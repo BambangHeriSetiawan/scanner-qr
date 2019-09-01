@@ -5,8 +5,18 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <FrameLayout
-        android:id="@+id/container"
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent">
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/vp_qr"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+        <com.google.android.material.tabs.TabLayout
+            android:layout_margin="40dp"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/tab_qr"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"/>
+    </RelativeLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

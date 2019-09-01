@@ -49,6 +49,10 @@ class ScannerFragment constructor(private val listener: OnScannerListener) : Fra
         return binding.root
     }
 
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        binding.imgClose.setOnClickListener { listener.onClose() }
+    }
 
     private fun initView() {
         zXingScannerView.setAutoFocus(true)
@@ -86,6 +90,7 @@ class ScannerFragment constructor(private val listener: OnScannerListener) : Fra
 
     interface OnScannerListener {
         fun onResult(result: Result )
+        fun onClose()
     }
     companion object {
         private const val RC_CAMERA = 11101
