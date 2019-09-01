@@ -4,7 +4,7 @@
         <attr name="shouldScaleToFill" format="boolean" />
         <attr name="laserEnabled" format="boolean" />
         <attr name="laserColor" format="color" />
-        <attr name="borderColor" format="color" />
+        <attr name="borderrColor" format="color" />
         <attr name="maskColor" format="color" />
         <attr name="borderWidth" format="dimension" />
         <attr name="borderLength" format="dimension" />

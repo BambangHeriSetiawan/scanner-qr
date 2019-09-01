@@ -59,7 +59,7 @@ public abstract class BarcodeScannerView extends FrameLayout implements Camera.P
             setShouldScaleToFill(a.getBoolean(R.styleable.BarcodeScannerView_shouldScaleToFill, true));
             mIsLaserEnabled = a.getBoolean(R.styleable.BarcodeScannerView_laserEnabled, mIsLaserEnabled);
             mLaserColor = a.getColor(R.styleable.BarcodeScannerView_laserColor, mLaserColor);
-            mBorderColor = a.getColor(R.styleable.BarcodeScannerView_borderColor, mBorderColor);
+            mBorderColor = a.getColor(R.styleable.BarcodeScannerView_borderrColor, mBorderColor);
             mMaskColor = a.getColor(R.styleable.BarcodeScannerView_maskColor, mMaskColor);
             mBorderWidth = a.getDimensionPixelSize(R.styleable.BarcodeScannerView_borderWidth, mBorderWidth);
             mBorderLength = a.getDimensionPixelSize(R.styleable.BarcodeScannerView_borderLength, mBorderLength);
