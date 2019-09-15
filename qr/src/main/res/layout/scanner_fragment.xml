@@ -31,8 +31,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
                 <TextView
+                    android:textColor="@android:color/white"
                     android:textStyle="bold"
-                    android:textSize="18dp"
+                    android:textSize="18sp"
                     android:padding="5dp"
                     android:gravity="center"
                     android:text="Snap Kode QR"
@@ -41,6 +42,7 @@
                 <TextView
                     android:padding="5dp"
                     android:gravity="center"
+                    android:textColor="@android:color/white"
                     android:text="Snap Kode QR "
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"/>
