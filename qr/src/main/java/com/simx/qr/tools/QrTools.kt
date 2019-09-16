@@ -11,6 +11,7 @@ import com.journeyapps.barcodescanner.BarcodeEncoder
  * Created by simx on 16,September,2019
  */
 object QrTools {
+
     @Throws(WriterException::class)
     fun generateQr(value : String?) :Bitmap? {
         var bitMatrix: BitMatrix? = null
@@ -23,6 +24,7 @@ object QrTools {
         }
         return barcodeEncoder.createBitmap(bitMatrix)
     }
+
     @Throws(WriterException::class)
     fun generateQr(value : Int?) :Bitmap? {
         var bitMatrix: BitMatrix? = null
